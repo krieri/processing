@@ -1,0 +1,41 @@
+Name			Ruleset								Axiom
+
+Hilbert curve		'A',"B>F<CFC<F>DvF^D>F<vvCFC<F<B//"				A
+			'B',"AvF^CFB^F^D^^>F>D^|F^B|FC^F^A//"
+			'C',"|D^|F^B>F<C^F^AvvFAvF^C<F<B^F^D//"
+			'D',"|CFB>F<B|FAvF^AvvFB>F<B|FC//"
+
+Plant structure 1	'A',"[vFLA]/////[vFLA]///////[vFLA]"				A
+			'F',"S/////F"
+			'S',"FL"
+			'L',"[^^L]"
+
+Hogeweg & Hesper 1
+
+Rule[] ruleset = new Rule[10];
+cExclude = "<>F";
+ruleset[0] = new Rule("0",'0',"0","0");
+ruleset[1] = new Rule("0",'0',"1","1[<F1F1]");
+ruleset[2] = new Rule("0",'1',"0","1");
+ruleset[3] = new Rule("0",'1',"1","1");
+ruleset[4] = new Rule("1",'0',"0","0");
+ruleset[5] = new Rule("1",'0',"1","1F1");
+ruleset[6] = new Rule("1",'1',"0","0");
+ruleset[7] = new Rule("1",'1',"1","0");
+ruleset[8] = new Rule("*",'<',"*",">");
+ruleset[9] = new Rule("*",'>',"*","<");
+lsys = new LSystem("F1F1F1",ruleset);
+
+Context sensitive 1
+Rule[] ruleset = new Rule[2];
+ruleset[0] = new Rule('F',"F[>EF[vvvL]]E[<F[^^^L]]");
+ruleset[1] = new Rule("*",'E',"F","F[vF[<<<L]][F[>>>L]]");
+lsys = new LSystem("F",ruleset);
+
+
+WTF
+Rule[] ruleset = new Rule[3];
+ruleset[0] = new Rule('F',0.33,">[>F<F<FL]<[<F>F>FL]");
+ruleset[1] = new Rule('F',0.33,"^[/F/F/FL]v[/F\\F\\FL]");
+ruleset[2] = new Rule('F',0.33,"v<[vFvFvFL]>[^F^F^FL]");
+lsys = new LSystem("F",ruleset);

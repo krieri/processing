@@ -1,0 +1,26 @@
+Description		Rule(s)						Axiom		Theta
+
+Koch island		'F',"F+FF-FF-F-F+F+FF-F-F+F+FF+FF-F"		F-F-F-F		PI/2
+Snowflake curve		'F',"F+F-F-F+F"					-F		PI/2
+Islands and lakes	'F',"F+f-FF+F+FF+Ff+FF-f+FF-F-FF-Ff-FFF"	F+F+F+F		PI/2
+			'f',"ffffff"
+Koch curve 1		'F',"FF-F-F-F-F-F+F"				F-F-F-F		PI/2
+Koch curve 2		'F',"F-FF--F-F"					F-F-F-F		PI/2
+Koch curve 3		'F',"F-F+F-F-F"					F-F-F-F		PI/2
+Koch curve 4		'F',"FF-F-F-F-FF"				F-F-F-F		PI/2
+Koch curve 5		'F',"FF-F--F-F"					F-F-F-F		PI/2
+Koch curve 6		'F',"FF-F+F-F-FF"				F-F-F-F		PI/2
+Branching structure A	'F',"F[+F]F[-F]F"				F		radians(25.7)
+Branching structure B	'F',"F[+F]F[-F][F]"				F		radians(20)
+Branching structure C	'F',"FF-[-F+F+F]+[+F-F-F]"			F		radians(22.5)
+Branching structure D	'X',"F[+X]F[-X]+X"				X		radians(20)
+			'F',"FF"
+Branching structure E	'X',"F[+X][-X]FX"				X		radians(25.7)
+			'F',"FF"
+Branching structure F	'X',"F-[[X]+X]+F[+FX]-X"			X		radians(22.5)
+			'F',"FF"
+
+	Edge rewriting
+
+Dragon curve		'L',"L+R+"					L		PI/2
+			'L',"-R-L"
